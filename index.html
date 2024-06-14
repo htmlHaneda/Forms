@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venda seu livro</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Venda seu livro!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Livraria</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Venda o seu livro usado aqui!</h1>
+                <p>
+                    Descreva as características e marque os opcionais que ele possui
+                </p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Título do livro <span class="required-field">*</span></label>
+                        <input type="text" name="title" id="title" class="block" placeholder="Titulo do seu livro"
+                            minlength="1" maxlength="30" required />
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Preço <span class="required-field">*</span></label>
+                        <input type="number" name="price" id="price" class="block"
+                            placeholder="Defina o preço do seu livro" required />
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Descrição <span class="required-field">*</span></label>
+                        <textarea name="description" id="description" class="block"
+                            placeholder="Aqui você coloca uma bio do seu livro"></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="brand">Autor <span class="required-field">*</span></label>
+                        <input type="text" name="brand" id="brand" class="block" placeholder="Autor"
+                            required />
+                    </div>
+                    <div class="box-input">
+                        <label for="editiom">Edição <span class="required-field">*</span></label>
+                        <input type="text" name="edition" id="edition" class="block"
+                            placeholder="Edição" required />
+                    </div>
+                    <div class="box-input">
+                        <label for="usetime">Tempo de uso <span class="required-field">*</span></label>
+                        <input type="number" name="usetime" id="usetime" class="block"
+                            placeholder="Tempo de uso" required />
+                    </div>
+                    <div class="box-input">
+                        <label for="purchase_date">Data da compra <span class="required-field">*</span></label>
+                        <input type="date" name="purchase_date" id="purchase_date" class="block" required />
+                    </div>
+                    <div class="box-input">
+                        <p>Poster: <span class="required-field">*</span></p>
+                        <input type="radio" id="yes" name="gear" />
+                        <label for="yes">Sim</label>
+                        <input type="radio" id="no" name="gear" />
+                        <label for="no">Não</label>
+                    </div>
+                    <div class="optional-box">
+                        <p>Opcionais</p>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="bookmark" name="optional[]" value="bookmark" />
+                                <label for="bookmark">Marca pagina</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="highlighter" name="optional[]" value="highlighter" />
+                                <label for="highlighter">Marca texto</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Fotos do livro: <span class="required-field">*</span></p>
+                        <input type="file" multiple accept="image/png, image/jpg" id="images" name="images" required />
+                    </div>
+                    <input type="submit" value="Enviar" class="btn-submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
